@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly.
  *
  * @version 1.0.0
  */
-class WCPT_Admin {
+class WCPT_Public {
 
   /**
    * Initialize class.
@@ -36,4 +36,4 @@ class WCPT_Admin {
 
 }
 
-WCPT_Admin::init();
+WCPT_Public::init();
