@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 class WCPT {
 
   /* Plugin version. */
-  const VERSION = '1.0.0';
+  const VERSION = '1.0.1';
 
   /**
    * @var WCPT - the single instance of the class.
