@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Product Tagline
 Plugin URI: https://willgorham.com/
-Description: Add a short product tagline to WooCommerce products with display options.
+Description: Adds a short product tagline to WooCommerce products.
 Version: 1.0.0
 Author: Will Gorham
 Author URI: https://willgorham.com/
