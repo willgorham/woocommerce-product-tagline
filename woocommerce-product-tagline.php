@@ -43,9 +43,12 @@ class WCPT {
 
   /**
    * Do some work.
+   *
+   * @since 1.0.0
    */
   private function __construct() {
 
+    add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
   }
 
   /**
@@ -65,6 +68,21 @@ class WCPT {
     }
 
     return self::$instance;
+  }
+
+  /**
+   * Start making things happen.
+   *
+   * @since  1.0.0
+   */
+  public function plugins_loaded() {
+
+    require_once( 'includes/class-wcpt-public.php' );
+
+    if ( is_admin() ) {
+      require_once( 'includes/class-wcpt-admin.php' );
+    }
+
   }
 
 }
