@@ -42,7 +42,7 @@ class WCPT_Admin {
    * @param int $post_id Post ID
    */
   public static function save_tagline_field( $post_id ) {
-    $tagline_content = empty( $_POST['_tagline'] ? '' : sanitize_textarea_field( $_POST['_tagline'] );
+    $tagline_content = empty( $_POST['_tagline'] ) ? '' : sanitize_textarea_field( $_POST['_tagline'] );
     update_post_meta( $post_id, '_tagline', $tagline_content );
   }
 
