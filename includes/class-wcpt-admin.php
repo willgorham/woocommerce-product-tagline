@@ -46,6 +46,6 @@ class WCPT_Admin {
     update_post_meta( $post_id, '_tagline', $tagline_content );
   }
 
-}
+} // WCPT_Admin
 
 WCPT_Admin::init();

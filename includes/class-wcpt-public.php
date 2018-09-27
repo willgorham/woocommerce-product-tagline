@@ -33,7 +33,6 @@ class WCPT_Public {
     echo '</em></div>';
   }
 
-
-}
+} // WCPT_Public
 
 WCPT_Public::init();

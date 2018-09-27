@@ -47,7 +47,6 @@ class WCPT {
    * @since 1.0.0
    */
   private function __construct() {
-
     add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
   }
 
@@ -62,7 +61,6 @@ class WCPT {
    * @since 1.0.0
    */
   public static function getInstance() {
-
     if ( is_null( self::$instance ) ) {
       self::$instance = new self();
     }
@@ -76,7 +74,6 @@ class WCPT {
    * @since  1.0.0
    */
   public function plugins_loaded() {
-
     require_once( 'includes/class-wcpt-public.php' );
 
     if ( is_admin() ) {
@@ -85,7 +82,7 @@ class WCPT {
 
   }
 
-}
+} // WCPT
 
 
 /**
