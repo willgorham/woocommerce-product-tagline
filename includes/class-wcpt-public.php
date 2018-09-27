@@ -28,9 +28,9 @@ class WCPT_Public {
   public static function output_tagline() {
     $tagline_content = get_post_meta( get_the_ID(), '_tagline', true );
 
-    echo '<div class="product-tagline"><em>';
+    echo '<div class="product-tagline">';
     echo esc_html( $tagline_content );
-    echo '</em></div>';
+    echo '</div>';
   }
 
 } // WCPT_Public
